@@ -1,6 +1,7 @@
-import "./index.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
+import LandingPage from "./pages/LandingPage";
+import "./index.css";
 import BookingPage from "./pages/BookingPage";
 
 const App = () => {
@@ -8,7 +9,7 @@ const App = () => {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<></>} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/about" element={<></>} />
         <Route path="/contact" element={<></>} />
         <Route path="/booking" element={<BookingPage />} />
