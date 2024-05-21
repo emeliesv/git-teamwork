@@ -1,13 +1,9 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import "./index.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
+import BookingPage from "./pages/BookingPage";
 
 const App = () => {
-  const [count, setCount] = useState(0);
-
   return (
     <BrowserRouter>
       <Header />
@@ -15,7 +11,7 @@ const App = () => {
         <Route path="/" element={<></>} />
         <Route path="/about" element={<></>} />
         <Route path="/contact" element={<></>} />
-        <Route path="/booking" element={<></>} />
+        <Route path="/booking" element={<BookingPage />} />
       </Routes>
     </BrowserRouter>
   );

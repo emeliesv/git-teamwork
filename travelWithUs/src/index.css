@@ -1,0 +1,15 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  border: 1px solid #ffae5f;
+  background-color: #fbd0a5;
+  font-weight: bold;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
